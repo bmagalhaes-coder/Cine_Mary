@@ -1,0 +1,443 @@
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090909;
+    color:#fff;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 7%;
+    background:rgba(15,15,15,.95);
+    border-bottom:2px solid #8b0000;
+    position:sticky;
+    top:0;
+    z-index:999;
+    backdrop-filter:blur(8px);
+}
+
+header img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #c1121f;
+}
+
+header h1{
+    font-size:2rem;
+    color:#ffffff;
+}
+
+header p{
+    color:#bbbbbb;
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+#banner{
+    height:320px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner-overlay{
+    text-align:center;
+    padding:20px;
+}
+
+.banner-overlay h1{
+    font-size:3rem;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.banner-overlay p{
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+/* ===========================
+   CATÁLOGO
+=========================== */
+
+#catalogo{
+    width:90%;
+    margin:50px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+    gap:35px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:#181818;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    border:1px solid #2b2b2b;
+
+    box-shadow:0 0 18px rgba(255,0,0,.15);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(255,0,0,.45);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:430px;
+
+    object-fit:cover;
+
+}
+
+.info{
+
+    padding:20px;
+
+}
+
+.info h2{
+
+    margin-bottom:12px;
+
+    color:#ff4040;
+
+}
+
+.estrelas{
+
+    color:#ffd700;
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+/* ===========================
+   HORÁRIOS
+=========================== */
+
+.horarios{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-top:15px;
+
+}
+
+.linhaHorario{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:8px 10px;
+
+    border-radius:8px;
+
+    background:#252525;
+
+    transition:.3s;
+
+}
+
+.hoje{
+
+    background:#b30000;
+
+    color:white;
+
+    font-weight:bold;
+
+    box-shadow:0 0 12px red;
+
+}
+
+/* ===========================
+   CLASSIFICAÇÃO
+=========================== */
+
+.classificacao{
+
+    margin-top:18px;
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    background:#990000;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   POPUP
+=========================== */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.82);
+
+    z-index:1000;
+
+    animation:fade .3s;
+
+}
+
+.popup-conteudo{
+
+    width:90%;
+
+    max-width:620px;
+
+    background:#181818;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    position:relative;
+
+    border:2px solid #8b0000;
+
+}
+
+.popup-conteudo img{
+
+    width:180px;
+
+    display:block;
+
+    margin:0 auto 20px;
+
+    border-radius:12px;
+
+}
+
+.popup-conteudo h2{
+
+    text-align:center;
+
+    color:#ff3b3b;
+
+    margin-bottom:15px;
+
+}
+
+.popup-info{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    margin:18px 0;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.popup-info p{
+
+    background:#262626;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+}
+
+#popupSinopse{
+
+    line-height:1.7;
+
+    color:#ddd;
+
+    text-align:justify;
+
+}
+
+#fecharPopup{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#b30000;
+
+    color:white;
+
+    border:none;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+#fecharPopup:hover{
+
+    background:red;
+
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+header h1{
+
+font-size:1.6rem;
+
+}
+
+.banner-overlay h1{
+
+font-size:2rem;
+
+}
+
+.banner-overlay p{
+
+font-size:1rem;
+
+}
+
+.card img{
+
+width:100%;
+
+height:470px;
+
+object-fit:cover;
+
+object-position:center top;
+
+}
+
+.popup-conteudo img{
+
+width:150px;
+
+}
+
+.popup-info{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+/* ===========================
+   ANIMAÇÃO
+=========================== */
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:scale(.9);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
