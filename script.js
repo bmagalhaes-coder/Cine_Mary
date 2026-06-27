@@ -56,12 +56,12 @@ const filmes = [
     "Após sua identidade ser revelada, Peter Parker pede ajuda ao Doutor Estranho. O feitiço dá errado e vilões de outros universos aparecem, obrigando diferentes versões do Homem-Aranha a lutarem juntas.",
 
     horarios:{
-        Segunda:"15:30",
-        Terça:"15:30",
-        Quarta:"18:00",
-        Quinta:"18:00",
-        Sexta:"20:30",
-        Sábado:"22:00"
+        Segunda:"13:30",
+        Terça:"13:30",
+        Quarta:"13:00",
+        Quinta:"13:00",
+        Sexta:"13:30",
+        Sábado:"13:00"
     }
 
 },
@@ -84,12 +84,12 @@ const filmes = [
     "Peter Quill reúne um grupo improvável formado por Rocket, Groot, Gamora e Drax para impedir que um poderoso artefato caia nas mãos erradas e destrua a galáxia.",
 
     horarios:{
-        Segunda:"13:30",
-        Terça:"13:30",
-        Quarta:"17:00",
-        Quinta:"17:00",
-        Sexta:"20:00",
-        Sábado:"22:30"
+        Segunda:"16:30",
+        Terça:"16:30",
+        Quarta:"16:00",
+        Quinta:"16:00",
+        Sexta:"16:00",
+        Sábado:"16:30"
     }
 
 },
@@ -112,12 +112,12 @@ const filmes = [
     "Após os acontecimentos devastadores causados por Thanos, os Vingadores restantes unem forças em uma missão definitiva para restaurar o universo. Em uma batalha épica, heróis de diferentes partes do mundo enfrentam seu maior desafio para salvar toda a humanidade.",
 
     horarios:{
-        Segunda:"13:00",
-        Terça:"13:00",
-        Quarta:"16:00",
-        Quinta:"16:00",
-        Sexta:"19:00",
-        Sábado:"20:30"
+        Segunda:"21:00",
+        Terça:"21:00",
+        Quarta:"21:00",
+        Quinta:"21:00",
+        Sexta:"21:00",
+        Sábado:"21:30"
     }
 
 }
