@@ -112,12 +112,12 @@ const filmes = [
     "Após os acontecimentos devastadores causados por Thanos, os Vingadores restantes unem forças em uma missão definitiva para restaurar o universo. Em uma batalha épica, heróis de diferentes partes do mundo enfrentam seu maior desafio para salvar toda a humanidade.",
 
     horarios:{
-        Segunda:"21:00",
-        Terça:"21:00",
-        Quarta:"21:00",
-        Quinta:"21:00",
-        Sexta:"21:00",
-        Sábado:"21:30"
+        Segunda:"20:00",
+        Terça:"20:00",
+        Quarta:"20:10",
+        Quinta:"20:00",
+        Sexta:"20:00",
+        Sábado:"20:10"
     }
 
 }
