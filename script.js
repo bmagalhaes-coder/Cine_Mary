@@ -92,6 +92,34 @@ const filmes = [
         Sábado:"22:30"
     }
 
+},
+
+{
+
+    titulo:"Vingadores: Ultimato",
+
+    imagem:"https://br.web.img3.acsta.net/pictures/19/04/26/17/30/2428965.jpg",
+
+    classificacao:"12 anos",
+
+    duracao:"3h01min",
+
+    ano:"2019",
+
+    nota:"★★★★★",
+
+    sinopse:
+    "Após os acontecimentos devastadores causados por Thanos, os Vingadores restantes unem forças em uma missão definitiva para restaurar o universo. Em uma batalha épica, heróis de diferentes partes do mundo enfrentam seu maior desafio para salvar toda a humanidade.",
+
+    horarios:{
+        Segunda:"13:00",
+        Terça:"13:00",
+        Quarta:"16:00",
+        Quinta:"16:00",
+        Sexta:"19:00",
+        Sábado:"20:30"
+    }
+
 }
 
 ];
@@ -438,3 +466,22 @@ card.style.transform="translateY(0)";
 ==========================================*/
 
 console.log("Catálogo Cine Mary+ carregado com sucesso!");
+
+/*==========================================
+   ESCONDER BANNER E CABEÇALHO AO ROLAR
+==========================================*/
+
+const banner = document.getElementById("banner");
+const cabecalho = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 30) {
+        banner.classList.add("esconder");
+        cabecalho.classList.add("esconder");
+    } else {
+        banner.classList.remove("esconder");
+        cabecalho.classList.remove("esconder");
+    }
+
+});
