@@ -28,12 +28,12 @@ const filmes = [
     "Os maiores heróis da Terra unem forças quando Loki ameaça dominar o planeta com um poderoso exército alienígena. Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro precisam trabalhar juntos para salvar a humanidade.",
 
     horarios:{
-        Segunda:"14:00",
-        Terça:"14:00",
-        Quarta:"16:30",
-        Quinta:"16:30",
-        Sexta:"19:30",
-        Sábado:"21:00"
+        Segunda:"09:00",
+        Terça:"09:00",
+        Quarta:"09:30",
+        Quinta:"09:30",
+        Sexta:"09:30",
+        Sábado:"09:00"
     }
 
 },
